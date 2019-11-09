@@ -1,4 +1,4 @@
-export interface DosboxConf {
+export interface DosBoxConf {
   [key: string]: any
 
   cpu?: {

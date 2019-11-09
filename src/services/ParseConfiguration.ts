@@ -1,9 +1,9 @@
 import { fs } from '@nofrills/fs'
 import { encode, decode } from 'ini'
 
-import { DosboxConf } from './DosboxConf'
+import { DosBoxConf } from './DosBoxConf'
 
-export async function SaveConfiguration(filename: string, config: DosboxConf) {
+export async function SaveConfiguration(filename: string, config: DosBoxConf) {
   const buffer = encode(config)
   await fs.writeFile(filename, buffer)
 }
