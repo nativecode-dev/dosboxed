@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "build": [
+      "[source:format]",
+      "[source:lint]",
+      "tsc --project tsconfig.json"
+    ],
+    "source:format": [
+      "jsonsort *.json",
+      "prettier --loglevel silent --write \"src/**/*.ts\""
+    ],
+    "source:lint": [
+      "tslint --project tsconfig.json --config tslint.json"
+    ]
+  }
+}
