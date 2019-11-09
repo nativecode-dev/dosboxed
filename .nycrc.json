@@ -7,7 +7,7 @@
     ".ts"
   ],
   "include": [
-    "*/*/src/**/*.ts"
+    "src/**/*.ts"
   ],
   "instrument": true,
   "report-dir": ".cache/coverage",

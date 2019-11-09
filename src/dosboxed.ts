@@ -1,10 +1,14 @@
 import yargs from 'yargs'
 
+import { Global } from './options/GlobalOptions'
+import ListCommand, { ListOptions } from './commands/list'
 import ConfigCommand, { ConfigOptions } from './commands/config'
 
-yargs
+Global(yargs)
   .scriptName('dosboxed')
-  .pkgConf(process.cwd())
+  .usage('$0 <command>')
+  .pkgConf(__dirname)
   .command<ConfigOptions>(ConfigCommand)
+  .command<ListOptions>(ListCommand)
   .showHelpOnFail(true)
   .parse()

@@ -11,6 +11,10 @@
     ],
     "source:lint": [
       "tslint --project tsconfig.json --config tslint.json"
+    ],
+    "test": [
+      "[build]",
+      "nyc mocha --opts mocha.opts"
     ]
   }
 }

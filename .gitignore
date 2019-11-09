@@ -1,12 +1,8 @@
-*.js
-*.js.map
-*.d.ts
-*.d.ts.map
-
 .cache/
 bin/
 dist/
 lib/
+cache-*.json
 *.tsbuildinfo
 
 # Logs
